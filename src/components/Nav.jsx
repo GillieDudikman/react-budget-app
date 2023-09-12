@@ -13,7 +13,7 @@ const Nav = ({ userName }) => {
 
                 {
                     userName && (
-                        <Form method="post" action="/logout">
+                        <Form method="post" action="logout">
                             <button type="submit">
                                 <span>Delete User</span>
                                 <BsTrash3Fill className="delete-logo"/>

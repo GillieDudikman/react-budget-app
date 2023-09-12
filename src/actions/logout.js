@@ -7,5 +7,5 @@ export const logoutAction = async () => {
     deleteItem({ key: "budgets" });
     deleteItem({ key: "expenses" });
     toast.success("You've deleted your account")
-    return redirect("/")
+    return redirect("/react-budget-app")
 }

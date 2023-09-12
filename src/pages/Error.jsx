@@ -15,7 +15,7 @@ const Error = () => {
                     <TbArrowBack className="error-back-logo"/>
                     <span>Go Back</span>
                 </button>
-                <Link to="/">
+                <Link to="/react-budget-app/">
                     <span>Go Home</span>
                     <AiFillHome className="error-home-logo"/>
                 </Link>

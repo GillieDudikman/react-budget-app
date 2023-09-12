@@ -37,7 +37,7 @@ const BudgetItem = ({budget, showDelete= false}) => {
             {
                 showDelete ? (
                     <div className="budget-item-actions">
-                        <Form method="post" action="delete">
+                        <Form method="post" action='delete'>
                             <button type="submit" className="budget-details">
                                 <span>Delete</span>
                                 <BsTrash3 className="budget-details-logo"/>
@@ -45,7 +45,7 @@ const BudgetItem = ({budget, showDelete= false}) => {
                         </Form>
                     </div>
                 ) : (
-                    <Link to={`/budget/${id}`}  className="budget-details">
+                    <Link to={`/react-budget-app/budget/${id}`}  className="budget-details">
                         <span>View Details</span>
                         <HiOutlineBanknotes className="budget-details-logo"/>
                     </Link>

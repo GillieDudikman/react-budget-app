@@ -27,5 +27,5 @@ export const deleteBudget = ({params}) => {
        throw new Error("There was a problem deleting your budget");
    }
 
-   return redirect("/")
+   return redirect("/react-budget-app")
 }
