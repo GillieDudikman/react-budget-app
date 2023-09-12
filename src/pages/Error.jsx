@@ -1,4 +1,4 @@
-import {Link, useNavigate, useRouteError} from "react-router-dom";
+import { Link, useNavigate, useRouteError} from "react-router-dom";
 import {TbArrowBack} from "react-icons/tb";
 import {AiFillHome} from "react-icons/ai";
 
@@ -8,6 +8,7 @@ const Error = () => {
 
     return (
         <div className="error">
+
             <h1>Uh oh! We've got a problem!</h1>
             <p>{error.message || error.statusText} </p>
             <div className="error-nav">

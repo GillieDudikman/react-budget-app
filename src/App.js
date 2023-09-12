@@ -10,9 +10,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import ExpensesPage, {expensesAction, expensesLoader} from "./pages/ExpensesPage";
 import BudgetPage, {budgetAction, budgetLoader} from "./pages/BudgetPage";
 import {deleteBudget} from "./actions/deleteBudget";
+import ErrorRoute from "./pages/ErrorRoute";
 
 const router = createBrowserRouter([
   {
+
     path: "/react-budget-app/",
     element: <Main/>,
     loader: mainLoader,
@@ -48,7 +50,11 @@ const router = createBrowserRouter([
       {
         path: "logout",
         action: logoutAction
-      }
+      },
+      {
+        path: "*",
+        element: <ErrorRoute/>
+      },
     ]
   },
 ])

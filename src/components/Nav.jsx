@@ -6,7 +6,7 @@ const Nav = ({ userName }) => {
     return (
         <nav className="navbar">
             <div className="navbar-elements">
-                <NavLink to="/" aria-label="Home">
+                <NavLink to="/react-budget-app" aria-label="Home">
                     <ImHome className="logo"/>
                     <span>ReactBudget</span>
                 </NavLink>

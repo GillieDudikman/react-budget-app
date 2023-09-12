@@ -17,8 +17,8 @@ const ExpenseItem = ({expense, showBudget}) => {
             {
                 showBudget && (
                     <td className="table-budget">
-                        <Link style={{"--custom-color": `hsl(${budget.color})`}}
-                        to={`/budget/${budget.id}`}>{budget.name}
+                        <Link style={showBudget?{"--custom-color": `hsl(${budget.color})`}:""}
+                        to={`budget/${budget.id}`}>{budget.name}
                         </Link></td>
                 )
             }
